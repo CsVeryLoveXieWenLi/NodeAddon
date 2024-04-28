@@ -24,12 +24,20 @@ add_cxflags("/MT")
 add_includedirs("D:\\Libs\\Static\\opencv-4.9.0\\x64\\include")
 add_includedirs("D:\\Libs\\Static\\ncnn-20240410\\x64\\include")
 add_includedirs("D:\\Libs\\Static\\node-18.20.2\\x64\\include")
+add_includedirs("D:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\include")
 add_includedirs("D:\\Libs\\Static\\node-addon-api-8.0.0\\x64\\include")
 
 
 -- 库文件路径
+add_includedirs("D:\\Libs\\Static\\node-18.20.2\\x64\\lib")
 add_linkdirs("D:\\Libs\\Static\\opencv-4.9.0\\x64\\lib")
+add_includedirs("D:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\lib")
 add_linkdirs("D:\\Libs\\Static\\ncnn-20240410\\x64\\lib")
+
+
+-- nodejs 库文件导入
+add_links("node.lib")
+add_syslinks("Advapi32")
 
 
 -- opencv 库文件导入
@@ -43,9 +51,8 @@ add_links("opencv_imgproc490.lib")
 add_links("zlib.lib")
 
 
--- nodejs 库文件导入
-add_links("node.lib")
-add_syslinks("Advapi32")
+-- onnxruntime 库文件导入
+add_links("onnxruntime.lib")
 
 
 -- ncnn 库文件导入
@@ -57,7 +64,7 @@ set_languages("c17", "c++20")
 
 
 -- 生成
-target("OcrTools")
+target("addon")
     set_kind("shared")
     add_files("src/*.cpp")
 
