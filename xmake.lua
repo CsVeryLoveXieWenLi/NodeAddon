@@ -29,9 +29,9 @@ add_includedirs("D:\\Libs\\Static\\node-addon-api-8.0.0\\x64\\include")
 
 
 -- 库文件路径
-add_includedirs("D:\\Libs\\Static\\node-18.20.2\\x64\\lib")
+add_linkdirs("D:\\Libs\\Static\\node-18.20.2\\x64\\lib")
 add_linkdirs("D:\\Libs\\Static\\opencv-4.9.0\\x64\\lib")
-add_includedirs("D:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\lib")
+add_linkdirs("D:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\lib")
 add_linkdirs("D:\\Libs\\Static\\ncnn-20240410\\x64\\lib")
 
 
