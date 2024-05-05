@@ -28,14 +28,14 @@ add_linkdirs("/root/Libs/Static/opencv-4.9.0/x64/lib")
 
 
 -- opencv 库文件导入
+add_links("zlib")
 add_links("libjpeg-turbo")
 add_links("libopenjp2")
-add_links("libpng")
 add_links("libwebp")
-add_links("opencv_core")
+add_links("libpng")
 add_links("opencv_imgcodecs")
 add_links("opencv_imgproc")
-add_links("zlib")
+add_links("opencv_core")
 
 
 -- 版本
