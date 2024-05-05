@@ -42,6 +42,11 @@ add_links("zlib")
 set_languages("c17", "c++20")
 
 
+-- Linux 系统图片库
+add_syslinks("jpeg")
+add_syslinks("png")
+
+
 -- 生成
 target("addon")
     set_kind("shared")
