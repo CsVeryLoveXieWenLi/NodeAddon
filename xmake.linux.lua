@@ -25,27 +25,39 @@ add_includedirs("/root/Libs/Static/node-addon-api-8.0.0/x64/include")
 
 -- 库文件路径
 add_linkdirs("/root/Libs/Static/opencv-4.9.0/x64/lib")
+add_linkdirs("/root/Libs/Static/jpeg-9f/x64/lib")
+add_linkdirs("/root/Libs/Static/libpng-1.6.43/x64/lib")
 
 
--- opencv 库文件导入 ()
+-- jpeg 库文件导入
+add_links("jpeg")
+
+
+-- png 库文件导入
+add_links("png")
+add_links("png16")
+
+
+-- opencv 库文件导入 (注意顺序)
 add_links("zlib")
 add_links("libjpeg-turbo")
 add_links("libopenjp2")
 add_links("libpng")
-add_links("libwebp")
 add_links("opencv_imgcodecs")
 add_links("opencv_imgproc")
 add_links("opencv_core")
+add_links("libwebp")
 
 
 -- 版本
-set_languages("c17", "c++20")
+set_languages("c17", "c++17")
 
 
 -- Linux 系统库
-add_syslinks("jpeg") -- jpeg
-add_syslinks("omp") -- openmp
-add_syslinks("pthread") -- pthread
+add_syslinks("jpeg")
+add_syslinks("png")
+add_syslinks("pthread")
+-- add_syslinks("omp")
 
 
 -- 生成
