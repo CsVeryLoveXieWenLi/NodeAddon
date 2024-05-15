@@ -1,6 +1,6 @@
 [
 {
   "directory": "D:\\CsVeryLoveXieWenLi\\ProjectsTool\\Cpp\\NodeAddon",
-  "arguments": ["D:\\Apps\\Install\\VS\\BuildTools\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/O2", "/fp:fast", "/std:c++20", "/ID:\\Libs\\Static\\opencv-4.9.0\\x64\\include", "/ID:\\Libs\\Static\\ncnn-20240410\\x64\\include", "/ID:\\Libs\\Static\\node-18.20.2\\x64\\include", "/ID:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\include", "/ID:\\Libs\\Static\\node-addon-api-8.0.0\\x64\\include", "/ID:\\Libs\\Static\\node-18.20.2\\x64\\lib", "/ID:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\lib", "/EHsc", "/MT", "/DNDEBUG", "/Fobuild\\.objs\\addon\\windows\\x64\\release\\src\\main.cpp.obj", "src\\main.cpp"],
+  "arguments": ["D:\\Apps\\Install\\VS\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/O2", "/fp:fast", "/std:c++20", "/ID:\\Libs\\Static\\opencv-4.9.0\\x64\\include", "/ID:\\Libs\\Static\\ncnn-20240410\\x64\\include", "/ID:\\Libs\\Static\\node-18.20.2\\x64\\include", "/ID:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\include", "/ID:\\Libs\\Static\\node-addon-api-8.0.0\\x64\\include", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\demo\\windows\\x64\\release\\src\\main.cpp.obj", "src\\main.cpp"],
   "file": "src\\main.cpp"
 }]

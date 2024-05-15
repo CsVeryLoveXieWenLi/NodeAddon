@@ -9,13 +9,13 @@
  * @Copyright (c) 2024 by CsVeryLoveXieWenLi, All Rights Reserved.
  */
 
-#include "main.h"
+#include <napi.h>
+
 
 /**
  * 初始化
  */
-Napi::Object Init(Napi::Env env, Napi::Object exports)
-{
+Napi::Object Init(Napi::Env env, Napi::Object exports) {
     // 导出
     return exports;
 }
