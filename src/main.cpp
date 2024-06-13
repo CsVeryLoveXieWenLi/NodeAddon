@@ -1,12 +1,10 @@
-﻿/**
+﻿/*
  * @Author: CsVeryLoveXieWenLi
- * @Date: 2024-04-28 11:37:17
- * @LastEditors: CsVeryLoveXieWenLi
- * @LastEditTime: 2024-05-16 02:35:54
- * @Description:
- * @QQ: 1172236399
+ * @Date: 2024-06-07 19:36:20
+ * @LastEditTime: 2024-06-14 06:21:46
+ * @Description: 
  * @Sign: 有些故事，总是美妙又缥缈，郁郁不得终。
- * @Copyright (c) 2024 by CsVeryLoveXieWenLi, All Rights Reserved.
+ * Copyright (c) 2024 by CsVeryLoveXieWenLi, All Rights Reserved.
  */
 
 #include <napi.h>

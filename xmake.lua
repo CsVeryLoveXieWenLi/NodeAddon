@@ -18,12 +18,12 @@ add_rules("mode.release")
 
 -- 头文件路径
 if is_os("linux") then
-    add_includedirs("/root/Libs/Static/opencv-4.9.0/x64/include")
+    add_includedirs("/root/Libs/Static/opencv-4.10.0/x64/include")
     add_includedirs("/root/Libs/Static/node-18.20.2/x64/include")
     add_includedirs("/root/Libs/Static/node-addon-api-8.0.0/x64/include")
 
 elseif is_os("windows") then
-    add_includedirs("D:\\Libs\\Static\\opencv-4.9.0\\x64\\include")
+    add_includedirs("D:\\Libs\\Static\\opencv-4.10.0\\x64\\include")
     add_includedirs("D:\\Libs\\Static\\ncnn-20240410\\x64\\include")
     add_includedirs("D:\\Libs\\Static\\node-18.20.2\\x64\\include")
     add_includedirs("D:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\include")
@@ -33,13 +33,13 @@ end
 
 -- 库文件路径
 if is_os("linux") then
-    add_linkdirs("/root/Libs/Static/opencv-4.9.0/x64/lib")
+    add_linkdirs("/root/Libs/Static/opencv-4.10.0/x64/lib")
     add_linkdirs("/root/Libs/Share/jpeg-9f/x64/lib")
     add_linkdirs("/root/Libs/Share/libpng-1.6.43/x64/lib")
 
 elseif is_os("windows") then
     add_linkdirs("D:\\Libs\\Static\\node-18.20.2\\x64\\lib")
-    add_linkdirs("D:\\Libs\\Static\\opencv-4.9.0\\x64\\lib")
+    add_linkdirs("D:\\Libs\\Static\\opencv-4.10.0\\x64\\lib")
     add_linkdirs("D:\\Libs\\Static\\onnxruntime-1.17.3\\x64\\lib")
     add_linkdirs("D:\\Libs\\Static\\ncnn-20240410\\x64\\lib")
 end
@@ -92,7 +92,7 @@ end
 
 
 -- 语言版本
-set_languages("c17", "c++20")
+set_languages("clatest", "c++20")
 
 
 -- 任务配置
